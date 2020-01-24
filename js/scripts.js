@@ -5,8 +5,9 @@ function range(num) {
     var display = "";
     if ("1".includes(i) == true) {
       display += "Beep!"; 
-        
-    }
+      } else if ("2".includes(i) == true) {
+          display += "Boop!";
+        }
     console.log( display || i);
   }
   return 
