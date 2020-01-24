@@ -1,7 +1,13 @@
 // BACKEND LOGIC
 function range(num) {
   for (i = 0; i <= num; i++) {
-    console.log(i);
+    // "contain" is the operative word here.
+    var display = "";
+    if ("1".includes(i) == true) {
+      display += "Beep!"; 
+        
+    }
+    console.log( display || i);
   }
   return 
 }
