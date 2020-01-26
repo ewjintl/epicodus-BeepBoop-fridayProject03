@@ -1,24 +1,14 @@
 // BACKEND LOGIC
-
-function range(num) {
-  var output = [];
-  for (i = 0; i <= num; i++) {
-    output.push(i);    
-  }
-  return console.log(output);
+var output = []
+for (i=1; i <= 15; i++) {
+  output.push(i);
 }
+console.log(output);
 
-
-
-
-
-
-// if ([i].includes(1)) {
-//   output += "Beep!"; 
-// //   // } else if ("2".includes(i) == true) {
-// //   //     display += "Boop!";
-//     }
-
+var mapped = output.map(function(number) {
+  return number * 2;
+});
+console.log(mapped);
 
 
 
@@ -26,11 +16,23 @@ function range(num) {
 // FRONTEND LOGIC
 $(Document).ready(function() {
   $("form#userInput").submit(function(event) {
-    event.preventDefault();
     var endNumber = parseInt($("#userEndNumber").val());
     console.log(endNumber);
-
+    
     range(endNumber);
-
+    
+    event.preventDefault();
   });
 });
+
+
+// spec1 = [];
+// output.forEach(function(item) {
+//   if ((item).includes(1)) {
+//     output.push("Beep!"); 
+//   }
+//   return console.log(output)
+// });
+// } else if ("2".includes(i) == true) {
+//    display += "Boop!";
+//     }
