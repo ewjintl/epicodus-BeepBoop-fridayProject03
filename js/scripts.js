@@ -1,16 +1,22 @@
 // BACKEND LOGIC
-var output = []
-for (i=1; i <= 15; i++) {
-  output.push(i);
+var output = [];
+function range(num) {
+    for (i = 0; i <= num; i++) {
+    output.push(i);    
+  }
+  console.log(output);
 }
-console.log(output);
 
-var mapped = output.map(function(number) {
-  return number * 2;
+var changer = output.map(function(number) {
+  if ([3, 13, 23, 30].includes(number)) {
+  return number = "I'm sorry Dave...";
+  } else if ([2, 12].includes(number)) {
+    return number = "Boop!";
+  } else if ([1, 11].includes(number)) {
+    return number = "Beep!";
+  } else 
+    return number;
 });
-console.log(mapped);
-
-
 
 
 // FRONTEND LOGIC
@@ -20,19 +26,8 @@ $(Document).ready(function() {
     console.log(endNumber);
     
     range(endNumber);
+    console.log(changer);
     
     event.preventDefault();
   });
 });
-
-
-// spec1 = [];
-// output.forEach(function(item) {
-//   if ((item).includes(1)) {
-//     output.push("Beep!"); 
-//   }
-//   return console.log(output)
-// });
-// } else if ("2".includes(i) == true) {
-//    display += "Boop!";
-//     }
