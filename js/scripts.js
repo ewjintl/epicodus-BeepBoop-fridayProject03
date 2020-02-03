@@ -2,32 +2,33 @@
 var output = [];
 function range(num) {
     for (i = 0; i <= num; i++) {
-    output.push(i);    
+    output.push(i.toString());    
   }
   console.log(output);
 }
 
-var changer = output.map(function(number) {
-  if ([3, 13, 23, 30].includes(number)) {
-  return number = "I'm sorry Dave...";
-  } else if ([2, 12].includes(number)) {
-    return number = "Boop!";
-  } else if ([1, 11].includes(number)) {
-    return number = "Beep!";
-  } else 
-    return number;
+function changer() {
+output.map(function(array) {
+  if (i.includes("3")) {
+  return i = "I'm sorry Dave...";
+  } else if (i.includes("2")) {
+    return i = "Boop!";
+  } else if (i.includes("1")) {
+    return i = "Beep!";
+  } else {
+    return array;
+  }
 });
-
+}
 
 // FRONTEND LOGIC
-$(Document).ready(function() {
+$(cocument).ready(function() {
   $("form#userInput").submit(function(event) {
     var endNumber = parseInt($("#userEndNumber").val());
     console.log(endNumber);
-    
+    // range().empty();
     range(endNumber);
-    console.log(changer);
-    
+    console.log(changer(output));   
     event.preventDefault();
   });
 });
