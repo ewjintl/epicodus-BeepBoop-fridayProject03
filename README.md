@@ -23,7 +23,9 @@ This web application that takes a number from a user and returns a range of numb
 |takes a number from a user and returns a range of numbers from 0 to the user inputted number. | 5 | [0, 1, 2, 3, 4, 5] |
 |Numbers that contain a 1: all digits are replaced (all digits) with "Beep!" | 5 | [0, "Beep!", 2, 3, 4, 5] |
 | Numbers that contain a 2: all digits are replaced (all digits) with "Boop!" | 5 | [0, "Beep!", "Boop!", 3, 4, 5] |
-| Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that." | 5 | [0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5]
+| Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that." | 5 | [0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5] |
+| The exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. | 5 | [0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5] |
+| A user should be able to enter a new number and see new results over and over again.| | |
 
 
 

@@ -1,10 +1,10 @@
 // BACKEND LOGIC
-var output = [];
 function range(num) {
+  var output = [];
     for (i = 0; i <= num; i++) {
-    output.push(i.toString());    
+    output.push(i.toString());   
   }
-  console.log(output);
+  return output;
 }
 
 function changer() {
@@ -22,13 +22,12 @@ output.map(function(string) {
 }
 
 // FRONTEND LOGIC
-$(cocument).ready(function() {
+$(document).ready(function() {
+  event.preventDefault();
   $("form#userInput").submit(function(event) {
     var endNumber = parseInt($("#userEndNumber").val());
-    console.log(endNumber);
-    // range().empty();
-    range(endNumber);
-    console.log(changer(output));   
-    event.preventDefault();
+    parseInt($("#userEndNumber").val(""));
+    var userArray = range(endNumber);
+    console.log(changer(userArray));   
   });
 });
