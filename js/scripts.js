@@ -8,7 +8,7 @@ function range(num) {
 }
 
 function changer() {
-output.map(function(array) {
+output.map(function(string) {
   if (i.includes("3")) {
   return i = "I'm sorry Dave...";
   } else if (i.includes("2")) {
