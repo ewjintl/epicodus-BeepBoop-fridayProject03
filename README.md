@@ -11,10 +11,9 @@ This web application that takes a number from a user and returns a range of numb
 
 ## Setup/Installation Requirements
 
-* Navigate to URL on your preferred web browser
-* Either download the files directly onto a folder in your desktop, or use the command $ "git clone URL" in your terminal.
-* Open the index.html file in your web browser.
-* Enter a series of numbers into the promted fields and click on the submit botton located on the bottom of the page. 
+* Download the project Zip folder onto your desktop OR clone it using terminal command $ git clone <https://github.com/ewjintl/epicodus-fridayProject03.git>
+* Doubleclick the index.html file in the folder's top directory or drag it into your web browser.
+* Enter a number into the promted field and click on the submit button directly below the form. 
 
 ## Specfications
 
@@ -26,6 +25,7 @@ This web application that takes a number from a user and returns a range of numb
 | Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that." | 5 | [0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5] |
 | The exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. | 5 | [0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5] |
 | A user should be able to enter a new number and see new results over and over again.| | |
+|
 
 
 
